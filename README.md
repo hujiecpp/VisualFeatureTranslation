@@ -1,1 +1,1 @@
-# VIsual Feature Translation
+# Visual Feature Translation
