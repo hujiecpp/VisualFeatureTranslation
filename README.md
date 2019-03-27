@@ -1,17 +1,19 @@
 This project is ongoing. (2019.3.27)
 
-# Image Retrieval Features
+This is the project page of our paper:
 
-This is a project for collecting the popular content-based image retrieval features.
-
-The collected features are used for preparing the meta-data of our paper:
-
-"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In CVPR 2019. \[[paper](https://arxiv.org/abs/1812.00573)\]\[[project](https://github.com/hujiecpp/VisualFeatureTranslation)\]
+"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In CVPR 2019. \[[paper](https://arxiv.org/abs/1812.00573)\]
 
 If you have any problem, please feel free to contact us.
 
-# Evaluation
-## Datasets
+# Preparing Features
+
+This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
+
+These features are extracted and evaluated in this section.
+
+## Evaluation
+### Datasets
 Datasets for evaluation:  
 - [Holidays](http://lear.inrialpes.fr/people/jegou/data.php#holidays) [1]
 - [Oxford5k](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/) [2]
@@ -20,14 +22,14 @@ Datasets for evaluation:
 Dataset for PCA whitening and creating codebooks:
 - [Google-Landmarks](https://www.kaggle.com/c/landmark-retrieval-challenge) [4]
 
-## Measurement
+### Measurement
 We use the mean Average Precision (mAP) provided by the official site of above datasets for evaluation.
 
-The detailed description and the code can be found in the following path of this project:
+The detailed description of mAP and the code can be found in the following path of this project:
 > ./Evaluation/
 
-# Features
-Please note that our extraction for features does not use the bounding boxes of images.
+## Features
+Please note that all our extractions for features do not use the bounding boxes of images.
 
 The local features (e.g., SIFT and DELF) are aggregated by the codebooks learned on 4,000 randomly picked images of Google-Landmarks dataset.
 
@@ -38,34 +40,34 @@ The features are listed bellow:
 - SIFT-FV and SIFT-VLAD:
 
 xxxxxxx
-> ./SIFT/
+> ./Evaluation/SIFT/
 
 - DELF-FV and DELV-VLAD:
 
 xxxxxxx
-> ./DELF/
+> ./Evaluation/DELF/
 
 - V-CroW and R-CroW:
 
 xxxxxxx
-> ./CroW/
+> ./Evaluation/CroW/
 
 - V-SPoC and R-SPoC:
 
 xxxxxxx
-> ./SPoC/
+> ./Evaluation/SPoC/
 
 - V-MAC, V-rMAC and R-MAC, R-rMAC:
 
 xxxxxxx
-> ./MAC/
+> ./Evaluation/MAC/
 
 - V-GeM, V-rGeM and R-GeM, R-rGeM:
 
 xxxxxxx
-> ./GeM/
+> ./Evaluation/GeM/
 
-# Results
+## Results
 The mAP (%) of collected features are as follows:
 
 |          | Holidays | Oxford5k | Paris6k |
@@ -87,7 +89,13 @@ The mAP (%) of collected features are as follows:
 |R-rMAC    |89.08     |68.46     |83.00    |
 |R-SPoC    |86.57     |62.36     |76.75    |
 
+# Learning to Translate
 
+> ./Translation/
+
+# Feature Relation Mining
+
+> ./Relation/
 
 # Reference
 [1] "Hamming embedding and weak geometric consistency for large scale image search." Jegou, H., Douze, M., & Schmid, C. In ECCV 2008.  
