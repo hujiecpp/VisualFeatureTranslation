@@ -1,5 +1,7 @@
 This project is ongoing. (2019.3.27)
 
+![image](http://github.com/hujiecpp/VisualFeatureTranslation/Figures/Framework.png)
+
 This is the project page of our paper:
 
 "Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. *In CVPR 2019.* \[[paper](https://arxiv.org/abs/1812.00573)\]
