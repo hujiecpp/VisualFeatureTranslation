@@ -1,4 +1,4 @@
-This project is ongoing. (2019.3.27)
+This project is ongoing and uncompleted now. (2019.3.27)
 
 ![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
 
