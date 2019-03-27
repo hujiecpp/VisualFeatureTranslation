@@ -29,7 +29,7 @@ The details can be found in:
 > ./Evaluation/
 
 ## 1.2. Features
-Please note that all our extractions for features do not use the bounding boxes of images.
+Please note that our extractions for images do not use the bounding boxes of the objects.
 
 The local features (e.g., SIFT and DELF) are aggregated by the codebooks learned on 4,000 randomly picked images of Google-Landmarks dataset.
 
@@ -37,28 +37,20 @@ And the features of picked images are used to train the PCA whitening for all fe
 
 The features are listed bellow:
 
-- SIFT-FV and SIFT-VLAD: The Scale Invariant Feature Transform (SIFT) [5] features are extracted and then aggregate by Fisher Vector (FV) [6] and Vector of Locally Aggregated Descriptors (VLAD) [7]. The details can be found in:
+- **SIFT-FV** and **SIFT-VLAD**: The Scale Invariant Feature Transform (SIFT) [5] features are extracted and then aggregate by Fisher Vector (FV) [6] and Vector of Locally Aggregated Descriptors (VLAD) [7]. The details can be found in:
 > ./Evaluation/SIFT/
-- DELF-FV and DELV-VLAD: The DEep Local Features (DELF) [8] are extracted and then aggregate also by FV and VLAD. The details can be found in:
+- **DELF-FV** and **DELV-VLAD**: The DEep Local Features (DELF) [8] are extracted and then aggregate also by FV and VLAD. The details can be found in:
 > ./Evaluation/DELF/
-- V-CroW and R-CroW:
-
-xxxxxxx
+- **V-CroW** and **R-CroW**: 
 > ./Evaluation/CroW/
 
-- V-SPoC and R-SPoC:
-
-xxxxxxx
+- **V-SPoC** and **R-SPoC**:
 > ./Evaluation/SPoC/
 
-- V-MAC, V-rMAC and R-MAC, R-rMAC:
-
-xxxxxxx
+- **V-MAC**, **V-rMAC** and **R-MAC**, **R-rMAC**:
 > ./Evaluation/MAC/
 
-- V-GeM, V-rGeM and R-GeM, R-rGeM:
-
-xxxxxxx
+- **V-GeM**, **V-rGeM** and **R-GeM**, **R-rGeM**:
 > ./Evaluation/GeM/
 
 ## 1.3. Results
