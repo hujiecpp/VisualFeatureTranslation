@@ -10,7 +10,7 @@ If you have any problem, please feel free to contact us.
 
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
 
-These features are extracted and evaluated in this section.
+The extracted features are evaluated in this section.
 
 ## 1.1. Evaluation
 ### Datasets
