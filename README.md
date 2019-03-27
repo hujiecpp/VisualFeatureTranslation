@@ -8,7 +8,7 @@ This is the project page of our paper:
 
 If you have any problem, please feel free to contact us.
 
-# 1. Preparing Features
+# 1. Feature Extraction
 
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
 
@@ -28,7 +28,7 @@ Dataset for PCA whitening and creating codebooks:
 We use the mean Average Precision (mAP) provided by the official site of above datasets for evaluation.
 
 The details can be found in:
-> ./Evaluation/
+> ./Extraction/
 
 ## 1.2. Features
 Please note that our extractions for images do not use the bounding boxes of the objects.
@@ -40,20 +40,20 @@ And the features of picked images are used to train the PCA whitening for all fe
 The features are listed bellow:
 
 - **SIFT-FV** and **SIFT-VLAD**: The Scale Invariant Feature Transform (SIFT) [5] features are extracted and then aggregate by Fisher Vector (FV) [6] and Vector of Locally Aggregated Descriptors (VLAD) [7]. The details can be found in:
-> ./Evaluation/SIFT/
+> ./Extraction/SIFT/
 - **DELF-FV** and **DELV-VLAD**: The DEep Local Features (DELF) [8] are extracted and then aggregate also by FV and VLAD. The details can be found in:
-> ./Evaluation/DELF/
+> ./Extraction/DELF/
 - **V-CroW** and **R-CroW**: 
-> ./Evaluation/CroW/
+> ./Extraction/CroW/
 
 - **V-SPoC** and **R-SPoC**:
-> ./Evaluation/SPoC/
+> ./Extraction/SPoC/
 
 - **V-MAC**, **V-rMAC** and **R-MAC**, **R-rMAC**:
-> ./Evaluation/MAC/
+> ./Extraction/MAC/
 
 - **V-GeM**, **V-rGeM** and **R-GeM**, **R-rGeM**:
-> ./Evaluation/GeM/
+> ./Extraction/GeM/
 
 ## 1.3. Results
 The mAP (%) of collected features are as follows:
@@ -77,11 +77,11 @@ The mAP (%) of collected features are as follows:
 |R-rMAC    |89.08     |68.46     |83.00    |
 |R-SPoC    |86.57     |62.36     |76.75    |
 
-# 2. Learning to Translate
+# 2. Feature Translation
 
 > ./Translation/
 
-# 3. Feature Relation Mining
+# 3. Relation Mining
 
 > ./Relation/
 
