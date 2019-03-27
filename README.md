@@ -2,7 +2,7 @@ This project is ongoing. (2019.3.27)
 
 This is the project page of our paper:
 
-"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In CVPR 2019. \[[paper](https://arxiv.org/abs/1812.00573)\]
+"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. *In CVPR 2019.* \[[paper](https://arxiv.org/abs/1812.00573)\]
 
 If you have any problem, please feel free to contact us.
 
@@ -25,7 +25,7 @@ Dataset for PCA whitening and creating codebooks:
 ### Measurement
 We use the mean Average Precision (mAP) provided by the official site of above datasets for evaluation.
 
-The detailed description of mAP and the code can be found in the following path of this project:
+The details can be found in:
 > ./Evaluation/
 
 ## 1.2. Features
@@ -33,20 +33,14 @@ Please note that all our extractions for features do not use the bounding boxes 
 
 The local features (e.g., SIFT and DELF) are aggregated by the codebooks learned on 4,000 randomly picked images of Google-Landmarks dataset.
 
-And the picked images are used for training the PCA whitening of all the features.
+And the features of picked images are used to train the PCA whitening for all features of other images.
 
 The features are listed bellow:
 
-- SIFT-FV and SIFT-VLAD:
-
-xxxxxxx
+- SIFT-FV and SIFT-VLAD: The Scale Invariant Feature Transform (SIFT) [5] features are extracted and then aggregate by Fisher Vector (FV) [6] and Vector of Locally Aggregated Descriptors (VLAD) [7]. The details can be found in:
 > ./Evaluation/SIFT/
-
-- DELF-FV and DELV-VLAD:
-
-xxxxxxx
+- DELF-FV and DELV-VLAD: The DEep Local Features (DELF) [8] are extracted and then aggregate also by FV and VLAD. The details can be found in:
 > ./Evaluation/DELF/
-
 - V-CroW and R-CroW:
 
 xxxxxxx
@@ -98,7 +92,11 @@ The mAP (%) of collected features are as follows:
 > ./Relation/
 
 # 4. Reference
-[1] "Hamming embedding and weak geometric consistency for large scale image search." Jegou, H., Douze, M., & Schmid, C. In ECCV 2008.  
-[2] "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In CVPR 2007.  
-[3] "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In CVPR 2008.  
-[4] "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In ICCV 2017.  
+[1] "Hamming embedding and weak geometric consistency for large scale image search." Jegou, H., Douze, M., & Schmid, C. *In ECCV 2008.*  
+[2] "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. *In CVPR 2007.*  
+[3] "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. *In CVPR 2008.*  
+[4] "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. *In ICCV 2017.*  
+[5] "Distinctive image features from scale-invariant keypoints." Lowe, D. G. *IJCV 2004.*  
+[6] "Large-scale image retrieval with compressed fisher vectors." Perronnin, F., Liu, Y., Sánchez, J., & Poirier, H. *In CVPR 2010.*  
+[7] "Aggregating local descriptors into a compact image representation." Jégou, H., Douze, M., Schmid, C., & Pérez, P. *In CVPR 2010.*  
+[8] "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. *In ICCV 2017.*  
