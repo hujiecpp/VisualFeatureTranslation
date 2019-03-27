@@ -1,6 +1,6 @@
 This project is ongoing. (2019.3.27)
 
-![image](http://github.com/hujiecpp/VisualFeatureTranslation/Figures/Framework.png)
+![The framework of our paper.](http://github.com/hujiecpp/VisualFeatureTranslation/Figures/Framework.png)
 
 This is the project page of our paper:
 
