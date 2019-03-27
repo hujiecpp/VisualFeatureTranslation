@@ -6,13 +6,13 @@ This is the project page of our paper:
 
 If you have any problem, please feel free to contact us.
 
-# 1 Preparing Features
+# 1. Preparing Features
 
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
 
 These features are extracted and evaluated in this section.
 
-## 1.1 Evaluation
+## 1.1. Evaluation
 ### Datasets
 Datasets for evaluation:  
 - [Holidays](http://lear.inrialpes.fr/people/jegou/data.php#holidays) [1]
@@ -28,7 +28,7 @@ We use the mean Average Precision (mAP) provided by the official site of above d
 The detailed description of mAP and the code can be found in the following path of this project:
 > ./Evaluation/
 
-## 1.2 Features
+## 1.2. Features
 Please note that all our extractions for features do not use the bounding boxes of images.
 
 The local features (e.g., SIFT and DELF) are aggregated by the codebooks learned on 4,000 randomly picked images of Google-Landmarks dataset.
@@ -67,7 +67,7 @@ xxxxxxx
 xxxxxxx
 > ./Evaluation/GeM/
 
-## 1.3 Results
+## 1.3. Results
 The mAP (%) of collected features are as follows:
 
 |          | Holidays | Oxford5k | Paris6k |
@@ -89,15 +89,15 @@ The mAP (%) of collected features are as follows:
 |R-rMAC    |89.08     |68.46     |83.00    |
 |R-SPoC    |86.57     |62.36     |76.75    |
 
-# 2 Learning to Translate
+# 2. Learning to Translate
 
 > ./Translation/
 
-# 3 Feature Relation Mining
+# 3. Feature Relation Mining
 
 > ./Relation/
 
-# 4 Reference
+# 4. Reference
 [1] "Hamming embedding and weak geometric consistency for large scale image search." Jegou, H., Douze, M., & Schmid, C. In ECCV 2008.  
 [2] "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In CVPR 2007.  
 [3] "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In CVPR 2008.  
