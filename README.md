@@ -7,7 +7,6 @@ This is the project page for our paper:
 If you have any problem, please feel free to contact us.
 
 ![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
-
 # 1. Feature Extraction
 
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
