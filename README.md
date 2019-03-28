@@ -104,4 +104,4 @@ To do.
 [12] "Aggregating local deep features for image retrieval." Babenko, A., & Lempitsky, V. *In ICCV 2015.*  
 [13] "Visual instance retrieval with deep convolutional networks." Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
 [14] "Particular object retrieval with integral max-pooling of CNN activations." Tolias, G., Sicre, R., & Jégou, H. *In ICLR 2016.*  
-[15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI.*  
+[15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
