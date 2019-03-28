@@ -1,12 +1,12 @@
 This project is ongoing and uncompleted now. (2019.3.28)
 
-![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
-
 This is the project page for our paper:
 
 "Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. *In CVPR 2019.* \[[paper](https://arxiv.org/abs/1812.00573)\]
 
 If you have any problem, please feel free to contact us.
+
+![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
 
 # 1. Feature Extraction
 
