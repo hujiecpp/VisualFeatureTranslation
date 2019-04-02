@@ -11,10 +11,9 @@ If you have any problem, please feel free to contact us.
 
 ![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
 # 1. Feature Extraction
-
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
 
-The extracted features are evaluated in this section.
+The extracted features are evaluated in this section, and the code with details can be found in: [./Extraction/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Extraction)
 
 ## 1.1 Evaluation
 ### 1.1.1 Datasets
@@ -29,8 +28,6 @@ Dataset for PCA whitening and creating codebooks:
 ### 1.1.2 Measurement
 We use the mean Average Precision (mAP) provided by the official site of above datasets for evaluation.
 
-The details can be found in: `./Extraction/`
-
 ## 1.2 Features
 Please note that our extractions for images do not use the bounding boxes of the objects.
 
@@ -38,7 +35,7 @@ The local features (e.g., SIFT and DELF) are aggregated by the codebooks learned
 
 And the features of picked images are used to train the PCA whitening for all features of other images.
 
-The features are listed bellow, and the details can be found in: `./Extraction/`
+The features are listed bellow:
 
 - **SIFT-FV** and **SIFT-VLAD**: The Scale Invariant Feature Transform (SIFT) [5] features are extracted and then aggregate by Fisher Vector (FV) [6] and Vector of Locally Aggregated Descriptors (VLAD) [7].
 
@@ -75,6 +72,10 @@ The mAP (%) of collected features are as follows:
 |R-SPoC    |86.57     |62.36     |76.75    |
 
 # 2. Feature Translation
+We translate different types of features and test them in this section.
+
+The code with details can be found in: [./Translation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Translation)
+
 ## 2.1 Evaluation
 ### 2.1.1 Datasets
 Datasets for evaluating the translation results:  
@@ -87,32 +88,52 @@ Dataset for training the Hybrid Auto-Encoder (HAE):
 
 ### 2.1.2 Measurement
 The mean average precision (mAP) is used to evaluate the retrieval performance. We translate the source features of galary images to the target space, and the target features of query images are used for searching.
+- Galary: Source -> Target
+- Query: Target
 
 ## 2.2 Hybrid Auto-Encoder
-The Hybrid Auto-Encoder (HAE) is trained with **Translation** (Source -> Target) and **Reconstruction** (Target -> Target), in which we can get the **Translation Error** and **Reconstruction Error** to optimize the network. The details can be found in: `./Translation/`
+The Hybrid Auto-Encoder (HAE) is trained with **Translation** (Source -> Target) and **Reconstruction** (Target -> Target), in which we can get the **Translation Error** and **Reconstruction Error** to optimize the network.
 
 ## 2.3 Results
+### 2.3.1 Translation Results
 The mAP(%) difference between target and translated features on three public datasets: Holidays (Green), Oxford5k (Blue) and Paris6k (Brown).
+
 ![The mAP difference.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/mAP_difference.png)
 
-# 3. Relation Mining
+### 2.3.2 Retrieval Examples
+The retrieval results for querying images of the *Eiffel Tower* (up) and the *Arc de Triomphe* (down) with the target features and the translated features. The images are resized for better view and the interesting results are colored by red bounding boxes.
 
-To do.
-`./Relation/`
+![Some retrieval results.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Retrieval_examples.png)
+
+# 3. Relation Mining
+We mine the relation of different types of features in this section, and the code with details can be found in: [./Relation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Relation)
+## 3.1 Affinity Measurement
+If the **Translation Error** is close to **Reconstruction Error**, we think the **Translation** between source and target features is similar to the **Reconstruction** of target features, which indicates the source and target features have high afﬁnity.
+
+Therefore, we regard the difference between the **Translation Error** and **Reconstruction Error** as an afﬁnity measurement.
+
+By normalizing, we can finally get an Undirected Affinity Measurement.
+
+## 3.2 Visualization Result
+The Undirected Affinity can be visualized by applying a Minimum Spanning Tree algorithm.
+
+The length of edges is the average value of the results on Holidays, Oxford5k and Paris6k datasets. The images are the retrieval results for a query image of the *Pantheon* with corresponding features in the main trunk of the MST. The close feature pairs such as R-SPoC and R-CroW have similar ranking lists.
+
+![The MST.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/MST.png)
 
 # 4. Reference
-1. "Hamming embedding and weak geometric consistency for large scale image search." Jégou, H., Douze, M., & Schmid, C. In *ECCV 2008.*  
-2. "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2007.*  
-3. "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2008.*  
-4. "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
-5. "Distinctive image features from scale-invariant keypoints." Lowe, D. G. *IJCV 2004.*  
-6. "Large-scale image retrieval with compressed fisher vectors." Perronnin, F., Liu, Y., Sánchez, J., & Poirier, H. In *CVPR 2010.*  
-7. "Aggregating local descriptors into a compact image representation." Jégou, H., Douze, M., Schmid, C., & Pérez, P. In *CVPR 2010.*  
-8. "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
-9. "Very deep convolutional networks for large-scale image recognition." Simonyan, K., & Zisserman, A. *arXiv:1409.1556.*  
-10. "Deep residual learning for image recognition." He, K., Zhang, X., Ren, S., & Sun, J. In *CVPR 2016.*  
-11. "Cross-dimensional weighting for aggregated deep convolutional features." Kalantidis, Y., Mellina, C., & Osindero, S. In *ECCV 2016.*  
-12. "Aggregating local deep features for image retrieval." Babenko, A., & Lempitsky, V. In *ICCV 2015.*  
-13. "Visual instance retrieval with deep convolutional networks." Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
-14. "Particular object retrieval with integral max-pooling of CNN activations." Tolias, G., Sicre, R., & Jégou, H. In *ICLR 2016.*  
-15. "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
+[1] "Hamming embedding and weak geometric consistency for large scale image search." Jégou, H., Douze, M., & Schmid, C. In *ECCV 2008.*  
+[2] "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2007.*  
+[3] "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2008.*  
+[4] "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
+[5] "Distinctive image features from scale-invariant keypoints." Lowe, D. G. *IJCV 2004.*  
+[6] "Large-scale image retrieval with compressed fisher vectors." Perronnin, F., Liu, Y., Sánchez, J., & Poirier, H. In *CVPR 2010.*  
+[7] "Aggregating local descriptors into a compact image representation." Jégou, H., Douze, M., Schmid, C., & Pérez, P. In *CVPR 2010.*  
+[8] "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
+[9] "Very deep convolutional networks for large-scale image recognition." Simonyan, K., & Zisserman, A. *arXiv:1409.1556.*  
+[10] "Deep residual learning for image recognition." He, K., Zhang, X., Ren, S., & Sun, J. In *CVPR 2016.*  
+[11] "Cross-dimensional weighting for aggregated deep convolutional features." Kalantidis, Y., Mellina, C., & Osindero, S. In *ECCV 2016.*  
+[12] "Aggregating local deep features for image retrieval." Babenko, A., & Lempitsky, V. In *ICCV 2015.*  
+[13] "Visual instance retrieval with deep convolutional networks." Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
+[14] "Particular object retrieval with integral max-pooling of CNN activations." Tolias, G., Sicre, R., & Jégou, H. In *ICLR 2016.*  
+[15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
