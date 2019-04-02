@@ -133,7 +133,7 @@ The length of edges is the average value of the results on Holidays, Oxford5k an
 [15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
 
 # 5. Citation
-If out paper helps your research, please cite it in your publications:
+If our paper helps your research, please cite it in your publications:
 ```
 @inproceedings{hu2018towards,
   title={Towards Visual Feature Translation},
