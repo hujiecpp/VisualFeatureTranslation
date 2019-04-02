@@ -116,21 +116,21 @@ The length of edges is the average value of the results on Holidays, Oxford5k an
 
 ![The MST.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/MST.png)
 # 4. Reference
-[1] "**Hamming embedding and weak geometric consistency for large scale image search.**" Jégou, H., Douze, M., & Schmid, C. In *ECCV 2008.*  
-[2] "**Object retrieval with large vocabularies and fast spatial matching.**" Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2007.*  
-[3] "**Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases.**" Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2008.*  
-[4] "**Large-scale image retrieval with attentive deep local features.**" Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
-[5] "**Distinctive image features from scale-invariant keypoints.**" Lowe, D. G. *IJCV 2004.*  
-[6] "**Large-scale image retrieval with compressed fisher vectors.**" Perronnin, F., Liu, Y., Sánchez, J., & Poirier, H. In *CVPR 2010.*  
-[7] "**Aggregating local descriptors into a compact image representation.**" Jégou, H., Douze, M., Schmid, C., & Pérez, P. In *CVPR 2010.*  
-[8] "**Large-scale image retrieval with attentive deep local features.**" Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
-[9] "**Very deep convolutional networks for large-scale image recognition.**" Simonyan, K., & Zisserman, A. *arXiv:1409.1556.*  
-[10] "**Deep residual learning for image recognition.**" He, K., Zhang, X., Ren, S., & Sun, J. In *CVPR 2016.*  
-[11] "**Cross-dimensional weighting for aggregated deep convolutional features.**" Kalantidis, Y., Mellina, C., & Osindero, S. In *ECCV 2016.*  
-[12] "**Aggregating local deep features for image retrieval.**" Babenko, A., & Lempitsky, V. In *ICCV 2015.*  
-[13] "**Visual instance retrieval with deep convolutional networks.**" Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
-[14] "**Particular object retrieval with integral max-pooling of CNN activations.**" Tolias, G., Sicre, R., & Jégou, H. In *ICLR 2016.*  
-[15] "**Fine-tuning CNN image retrieval with no human annotation.**" Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
+**[1]** "Hamming embedding and weak geometric consistency for large scale image search." Jégou, H., Douze, M., & Schmid, C. In *ECCV 2008.*  
+**[2]** "Object retrieval with large vocabularies and fast spatial matching." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2007.*  
+**[3]** "Lost in Quantization: Improving Particular Object Retrieval in Large Scale Image Databases." Philbin, J., Chum, O., Isard, M., Sivic, J. & Zisserman, A. In *CVPR 2008.*  
+**[4]** "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
+**[5]** "Distinctive image features from scale-invariant keypoints." Lowe, D. G. *IJCV 2004.*  
+**[6]** "Large-scale image retrieval with compressed fisher vectors." Perronnin, F., Liu, Y., Sánchez, J., & Poirier, H. In *CVPR 2010.*  
+**[7]** "Aggregating local descriptors into a compact image representation." Jégou, H., Douze, M., Schmid, C., & Pérez, P. In *CVPR 2010.*  
+**[8]** "Large-scale image retrieval with attentive deep local features." Noh, H., Araujo, A., Sim, J., Weyand, T., & Han, B. In *ICCV 2017.*  
+**[9]** "Very deep convolutional networks for large-scale image recognition." Simonyan, K., & Zisserman, A. *arXiv:1409.1556.*  
+**[10]** "Deep residual learning for image recognition." He, K., Zhang, X., Ren, S., & Sun, J. In *CVPR 2016.*  
+**[11]** "Cross-dimensional weighting for aggregated deep convolutional features." Kalantidis, Y., Mellina, C., & Osindero, S. In *ECCV 2016.*  
+**[12]** "Aggregating local deep features for image retrieval." Babenko, A., & Lempitsky, V. In *ICCV 2015.*  
+**[13]** "Visual instance retrieval with deep convolutional networks." Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
+**[14]** "Particular object retrieval with integral max-pooling of CNN activations." Tolias, G., Sicre, R., & Jégou, H. In *ICLR 2016.*  
+**[15]** "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
 
 # 5. Citation
 If our paper helps your research, please cite it in your publications:
