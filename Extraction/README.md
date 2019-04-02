@@ -1,8 +1,8 @@
 # Prerequisites
-- python2
-- python3
-- g++
-- matlab
+- matlab (for extracting and aggregating features)
+- python2, python3, and g++ (for mAP evaluation)
+- tensorflow (for extracting DELF)
+- matconvnet (for extracting features)
 
 # Extraction
 1. Download the images of test datasets ([Holidays](http://lear.inrialpes.fr/people/jegou/data.php#holidays), [Oxford5k](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/), [Paris6k](http://www.robots.ox.ac.uk/~vgg/data/parisbuildings/)). And each dataset is seperated to `galary` for searching and `query` for querying.
@@ -13,12 +13,20 @@
 2. Run `extract_sift.m` by assigning the **image_dir**, **save_dir** in the code. The **image_dir** is the dataset's abosolute path, and **save_dir** is the path of extrected features.
 > matlab  
 > \>\> extract_sift
-3. After extracting the local features, revise the data path and save path in `aggre_sift_fv.m` and run it for aggregating SIFT by FV.
+3. After extracting the local features, revise the data path and save path in `aggre_sift_fv.m` and run it for aggregating SIFT by FV. Also `aggre_sift_vlad.m` by VLAD.
 > \>\> aggre_sift_fv
-4. The same operation of `aggre_sift_vlad.m` for aggregating SIFT by VLAD.
 > \>\> aggre_sift_vlad
 
 ## DELF
+1. Set up [DELF](https://github.com/tensorflow/models/tree/master/research/delf).
+2. Generate the text file for **list_images_path**.
+> python imagelist.py -dir x
+3. Run `extract_delf.py` for extracting.
+> python extract_delf.py --list_images_path x.txt --output_dir x
+4. Run `aggre_delf_fv.m` for aggregating DELF by FV, and `aggre_delf_vlad.m` by VLAD.
+> matlab 
+> \>\> aggre_delf_fv
+> \>\> aggre_delf_vlad
 
 ## CroW
 

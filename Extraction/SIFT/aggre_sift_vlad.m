@@ -2,10 +2,9 @@
 clc;clear;
 
 %%
-run('./toolbox/vl_setup');
+run('./vlfeat/toolbox/vl_setup');
 vl_version verbose
-addpath('./helpers');
-addpath('./yael');
+addpath('./utils');
 
 datasets = {'Landmarks', 'Holidays', 'Paris6k', 'Oxford5k'};
 train_num = 4000;
