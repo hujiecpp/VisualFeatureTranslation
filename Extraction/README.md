@@ -10,10 +10,13 @@
 
 ## SIFT
 1. Set up [VLFeat](http://www.vlfeat.org/install-matlab.html) for matlab: download [VLFeat binary package](http://www.vlfeat.org/download/vlfeat-0.9.21-bin.tar.gz) and unzip it.
-2. Run `extract_SIFT.m` by assigning the **image_dir**, **save_dir** in the code. The **image_dir** is the dataset's abosolute path, and **save_dir** is the path of extrected features.
-> matlab
-> \>\>extract_SIFT
-3. 
+2. Run `extract_sift.m` by assigning the **image_dir**, **save_dir** in the code. The **image_dir** is the dataset's abosolute path, and **save_dir** is the path of extrected features.
+> matlab  
+> \>\> extract_sift
+3. After extracting the local features, revise the data path and save path in `aggre_sift_fv.m` and run it for aggregating SIFT by FV.
+> \>\> aggre_sift_fv
+4. The same operation of `aggre_sift_vlad.m` for aggregating SIFT by VLAD.
+> \>\> aggre_sift_vlad
 
 ## DELF
 
