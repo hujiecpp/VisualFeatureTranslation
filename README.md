@@ -136,3 +136,14 @@ The length of edges is the average value of the results on Holidays, Oxford5k an
 [13] "Visual instance retrieval with deep convolutional networks." Razavian, A. S., Sullivan, J., Carlsson, S., & Maki, A. *MTA 2016.*  
 [14] "Particular object retrieval with integral max-pooling of CNN activations." Tolias, G., Sicre, R., & Jégou, H. In *ICLR 2016.*  
 [15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
+
+# 5. Citation
+Please cite our paper in your publications if it helps your research:
+```
+@inproceedings{hu2018towards,
+  title={Towards Visual Feature Translation},
+  author={Hu, Jie and Ji, Rongrong and Liu, Hong and Zhang, Shengchuan and Deng, Cheng and Tian, Qi},
+  booktitle={CVPR},
+  year={2019}
+}
+```
