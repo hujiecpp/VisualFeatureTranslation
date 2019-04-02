@@ -6,8 +6,14 @@
 
 # Extraction
 1. Download the images of test datasets ([Holidays](http://lear.inrialpes.fr/people/jegou/data.php#holidays), [Oxford5k](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/), [Paris6k](http://www.robots.ox.ac.uk/~vgg/data/parisbuildings/)). And each dataset is seperated to `galary` for searching and `query` for querying.
+2. Extract different types of features by the following steps.
 
 ## SIFT
+1. Set up [VLFeat](http://www.vlfeat.org/install-matlab.html) for matlab: download [VLFeat binary package](http://www.vlfeat.org/download/vlfeat-0.9.21-bin.tar.gz) and unzip it.
+2. Run `extract_SIFT.m` by assigning the **image_dir**, **save_dir** in the code. The **image_dir** is the dataset's abosolute path, and **save_dir** is the path of extrected features.
+> matlab
+> >>extract_SIFT
+3. 
 
 ## DELF
 
