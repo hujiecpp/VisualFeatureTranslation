@@ -11,8 +11,10 @@
 ## SIFT
 1. Set up [VLFeat](http://www.vlfeat.org/install-matlab.html) for matlab: download [VLFeat binary package](http://www.vlfeat.org/download/vlfeat-0.9.21-bin.tar.gz) and unzip it.
 2. Run `extract_SIFT.m` by assigning the **image_dir**, **save_dir** in the code. The **image_dir** is the dataset's abosolute path, and **save_dir** is the path of extrected features.
-> matlab
-> >>extract_SIFT
+```
+matlab
+>>extract_SIFT
+```
 3. 
 
 ## DELF
