@@ -1,5 +1,5 @@
 clc;clear;
-run('./vlfeat/toolbox/vl_setup');
+run('../vlfeat/toolbox/vl_setup');
 % vl_version verbose
 
 %% Set image path

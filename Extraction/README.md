@@ -27,10 +27,21 @@
 > matlab 
 > \>\> aggre_delf_fv
 > \>\> aggre_delf_vlad
+5. Convert the files to .mat.
+> python convert.py
+
+## MAC
+1. Set up [Matconvnet](http://www.vlfeat.org/matconvnet/).
+2. Download the pre-trained models from the Matconvnet site: [vgg-16](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-16.mat) and [resnet-101](http://www.vlfeat.org/matconvnet/models/imagenet-resnet-101-dag.mat).
+3. Run the extraction for V-MAC, V-rMAC, R-MAC and R-rMAC.
+> matlab  
+> \>\> extract_vgg_mac
+> \>\> extract_vgg_rmac
+> \>\> extract_resnet_mac
+> \>\> extract_resnet_rmac
 
 ## CroW
 
-## MAC
 
 ## GeM
 
