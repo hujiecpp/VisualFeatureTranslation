@@ -13,7 +13,7 @@ If you have any problem, please feel free to contact us.
 # 1. Feature Extraction
 This section contains the process of collecting popular content-based image retrieval features for preparing the meta-data of our paper.
 
-The extracted features are evaluated in this section, and the code with details can be found in: `[./Extraction/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Extraction)`
+The extracted features are evaluated in this section, and the code with details can be found in: [./Extraction/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Extraction)
 
 ## 1.1 Evaluation
 ### 1.1.1 Datasets
@@ -74,7 +74,7 @@ The mAP (%) of collected features are as follows:
 # 2. Feature Translation
 We translate different types of features and test them in this section.
 
-The code with details can be found in: `[./Translation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Translation)`
+The code with details can be found in: [./Translation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Translation)
 
 ## 2.1 Evaluation
 ### 2.1.1 Datasets
@@ -106,7 +106,7 @@ The retrieval results for querying images of the *Eiffel Tower* (up) and the *Ar
 ![Some retrieval results.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Retrieval_examples.png)
 
 # 3. Relation Mining
-We mine the relation of different types of features in this section, and the code with details can be found in: `[./Relation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Relation)`
+We mine the relation of different types of features in this section, and the code with details can be found in: [./Relation/](https://github.com/hujiecpp/VisualFeatureTranslation/tree/master/Relation)
 ## 3.1 Affinity Measurement
 If the **Translation Error** is close to **Reconstruction Error**, we think the **Translation** between source and target features is similar to the **Reconstruction** of target features, which indicates the source and target features have high afﬁnity.
 
