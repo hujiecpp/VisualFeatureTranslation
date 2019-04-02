@@ -41,9 +41,29 @@
 > \>\> extract_resnet_rmac
 
 ## CroW
+1. The same as Step 1 above.
+2. The same as Step 2 above.
+3. Run the extraction for V-CroW and R-CroW.
+> matlab  
+> \>\> extract_vgg_crow
+> \>\> extract_resnet_crow
 
+## SPoC
+1. The same as Step 1 above.
+2. The same as Step 2 above.
+3. Run the extraction for V-SPoC and R-SPoC.
+> matlab  
+> \>\> extract_vgg_spoc
+> \>\> extract_resnet_spoc
 
 ## GeM
+1. Download and set up the official implementation of [GeM](https://github.com/filipradenovic/cnnimageretrieval).
+2. Run the extraction for V-GeM, V-rGeM, R-GeM and R-rGeM.
+> matlab  
+> \>\> extract_vgg_gem
+> \>\> extract_vgg_rgem
+> \>\> extract_resnet_gem
+> \>\> extract_resnet_rgem
 
 # Evaluation
 After extraction, we use the official implementation to evaluate the mAP of test datasets ([Holidays](http://lear.inrialpes.fr/people/jegou/data.php#holidays), [Oxford5k](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/), [Paris6k](http://www.robots.ox.ac.uk/~vgg/data/parisbuildings/)).
