@@ -14,7 +14,7 @@
 > matlab  
 > \>\> extract_sift
 3. After extracting the local features, revise the data path and save path in `aggre_sift_fv.m` and run it for aggregating SIFT by FV. Also `aggre_sift_vlad.m` by VLAD.
-> \>\> aggre_sift_fv
+> \>\> aggre_sift_fv  
 > \>\> aggre_sift_vlad
 
 ## DELF
@@ -25,7 +25,7 @@
 > python extract_delf.py --list_images_path x.txt --output_dir x
 4. Run `aggre_delf_fv.m` for aggregating DELF by FV, and `aggre_delf_vlad.m` by VLAD.
 > matlab 
-> \>\> aggre_delf_fv
+> \>\> aggre_delf_fv  
 > \>\> aggre_delf_vlad
 5. Convert the files to .mat.
 > python convert.py
@@ -35,9 +35,9 @@
 2. Download the pre-trained models from the Matconvnet site: [vgg-16](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-16.mat) and [resnet-101](http://www.vlfeat.org/matconvnet/models/imagenet-resnet-101-dag.mat).
 3. Run the extraction for V-MAC, V-rMAC, R-MAC and R-rMAC.
 > matlab  
-> \>\> extract_vgg_mac
-> \>\> extract_vgg_rmac
-> \>\> extract_resnet_mac
+> \>\> extract_vgg_mac  
+> \>\> extract_vgg_rmac  
+> \>\> extract_resnet_mac  
 > \>\> extract_resnet_rmac
 
 ## CroW
@@ -45,7 +45,7 @@
 2. The same as Step 2 above.
 3. Run the extraction for V-CroW and R-CroW.
 > matlab  
-> \>\> extract_vgg_crow
+> \>\> extract_vgg_crow  
 > \>\> extract_resnet_crow
 
 ## SPoC
@@ -53,16 +53,16 @@
 2. The same as Step 2 above.
 3. Run the extraction for V-SPoC and R-SPoC.
 > matlab  
-> \>\> extract_vgg_spoc
+> \>\> extract_vgg_spoc  
 > \>\> extract_resnet_spoc
 
 ## GeM
 1. Download and set up the official implementation of [GeM](https://github.com/filipradenovic/cnnimageretrieval).
 2. Run the extraction for V-GeM, V-rGeM, R-GeM and R-rGeM.
 > matlab  
-> \>\> extract_vgg_gem
-> \>\> extract_vgg_rgem
-> \>\> extract_resnet_gem
+> \>\> extract_vgg_gem  
+> \>\> extract_vgg_rgem  
+> \>\> extract_resnet_gem  
 > \>\> extract_resnet_rgem
 
 # Evaluation
