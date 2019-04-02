@@ -1,8 +1,3 @@
-~~This project is ongoing and uncompleted now.:blush: (2019.3.30)~~  
-~~This project is ongoing and uncompleted now.:dizzy_face: (2019.4.1)~~  
-This project is ongoing and uncompleted now.:smirk: (2019.4.2)  
-***
-
 This is the project page for our paper:
 
 "Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In *CVPR 2019.* \[[paper](https://arxiv.org/abs/1812.00573)\]
@@ -138,7 +133,7 @@ The length of edges is the average value of the results on Holidays, Oxford5k an
 [15] "Fine-tuning CNN image retrieval with no human annotation." Radenović, F., Tolias, G., & Chum, O. *PAMI 2018.*  
 
 # 5. Citation
-Please cite our paper in your publications if it helps your research:
+If out paper helps your research, please cite it in your publications:
 ```
 @inproceedings{hu2018towards,
   title={Towards Visual Feature Translation},
