@@ -1,6 +1,6 @@
-This is the project page for our paper:
+This is the project page of our paper:
 
-"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In *CVPR 2019.* \[[paper](https://arxiv.org/abs/1812.00573)\]
+"Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In *CVPR 2019.* \[[paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Hu_Towards_Visual_Feature_Translation_CVPR_2019_paper.html)\]
 
 If you have any problem, please feel free to contact us.
 
@@ -135,10 +135,10 @@ The length of edges is the average value of the results on Holidays, Oxford5k an
 # 5. Citation
 If our paper helps your research, please cite it in your publications:
 ```
-@inproceedings{hu2018towards,
-  title={Towards Visual Feature Translation},
-  author={Hu, Jie and Ji, Rongrong and Liu, Hong and Zhang, Shengchuan and Deng, Cheng and Tian, Qi},
-  booktitle={CVPR},
-  year={2019}
+@InProceedings{Hu_2019_CVPR,
+author = {Hu, Jie and Ji, Rongrong and Liu, Hong and Zhang, Shengchuan and Deng, Cheng and Tian, Qi},
+title = {Towards Visual Feature Translation},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+year = {2019}
 }
 ```
