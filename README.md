@@ -2,7 +2,7 @@ This is the project page of our paper:
 
 "Towards Visual Feature Translation." Hu, J., Ji, R., Liu, H., Zhang, S., Deng, C., & Tian, Q. In *CVPR 2019.* \[[paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Hu_Towards_Visual_Feature_Translation_CVPR_2019_paper.html)\]
 
-If you have any problem, please feel free to contact us.
+If you have any problem, please feel free to contact us. (hujie.cpp@gmail.com)
 
 ![The framework of our paper.](https://github.com/hujiecpp/VisualFeatureTranslation/blob/master/Figures/Framework.png)
 # 1. Feature Extraction
